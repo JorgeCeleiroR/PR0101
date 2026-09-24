@@ -70,6 +70,8 @@ COMPROBANTE: <img width="1917" height="906" alt="image" src="https://github.com/
 === PASO 1 - CREAMOS EL FICHERO ===
 PRIMER COMANDO: mkdir -p scripts
 SEGUNDO COMANDO: nano scripts/.env
+COMPROBANTE: <img width="450" height="148" alt="image" src="https://github.com/user-attachments/assets/5b3916c0-5afc-4ef1-9f53-514e628c617b" />
+
 Dentro del nano añadiremos lo siguiente: WEBMIN_ROOT_PASSWORD="PasswordAlumno", WEBMIN_PORT=10000 y WEBMIN_USER: "root".
 También podemos añadir el puerto SSH que hemos usado, en mi caso ha sido el SSH_PORT: 22. 
 Para salir del nano guardas con Ctrl+O, Enter, y sales con Ctrl+X.
