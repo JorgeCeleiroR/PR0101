@@ -61,10 +61,22 @@ En mi caso tengo dos interfaces de red:
  - enp0s3 → 10.0.2.15 (es la red NAT de VirtualBox, normalmente no accesible directamente desde tu navegador del host)
  - enp0s8 → 192.168.0.2 (es una red Host-Only, esta sí debería ser accesible desde tu máquina física)
 
+Para abrir Webmin usamos el siguiente enlace: https://192.168.0.2:10000. Este enlace es personal variara depende de la ip y el puerto de cada uno.
+
 COMPROBANTE: <img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/792e18da-ddc1-41f0-84cd-c490eecb1322" />
 
 
+--- VAMOS A AUTOMATIZARLO ---
+=== PASO 1 - CREAMOS EL FICHERO ===
+PRIMER COMANDO: mkdir -p scripts
+SEGUNDO COMANDO: nano scripts/.env
+Dentro del nano añadiremos lo siguiente: WEBMIN_ROOT_PASSWORD="PasswordAlumno", WEBMIN_PORT=10000 y WEBMIN_USER: "root".
+También podemos añadir el puerto SSH que hemos usado, en mi caso ha sido el SSH_PORT: 22. 
+Para salir del nano guardas con Ctrl+O, Enter, y sales con Ctrl+X.
 
+=== PASO 2 - CREAMOS EL .sh ===
+PRIMER COMANDO: nano scripts/webmin-install.sh
+COMPROBANTE: <img width="955" height="751" alt="image" src="https://github.com/user-attachments/assets/71f3b4ea-44a9-4971-bcb7-0273e5853cac" />
 
 
 
