@@ -215,9 +215,3 @@ Este script recopila todos los comandos anteriores (actualización, dependencias
 ![Creación de webmin-install.sh](https://github.com/user-attachments/assets/71f3b4ea-44a9-4971-bcb7-0273e5853cac)
 
 ---
-
-## Notas finales
-
-- Todos los comandos que modifican la configuración del sistema requieren `sudo`, ya que Webmin y el cortafuegos necesitan permisos de administrador.
-- Se recomienda no subir el archivo `.env` a repositorios públicos por contener credenciales.
-- La contraseña `PasswordAlumno` se ha usado solo como ejemplo; en un entorno real debería sustituirse por una contraseña robusta.
